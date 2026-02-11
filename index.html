@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cek Kultivasi</title>
+  <style>
+    body {
+      background:#0f0f0f;
+      color:white;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      padding: 15px 30px;
+      margin: 20px;
+      border:none;
+      border-radius:5px;
+      background:#ff0000;
+      color:white;
+      font-weight:bold;
+      font-size:16px;
+    }
+    #pesan {
+      margin-top: 20px;
+      font-size:18px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Check Tingkat Kultivasimu</h1>
+<p>Klik tombol di bawah untuk cek status Kultivasi </p>
+
+<button onclick="Asli()">Cek ayena!</button>
+
+<p id="pesan"></p>
+
+<script>
+function Asli() {
+  document.getElementById("pesan").innerText = "Katakan Van suaminya Cailin. Agar Kultivasimu meningkat!";
+  alert("Tingkat Kultivasimu adalah manusia fana");
+  setTimeout(() => {
+    document.getElementById("pesan").innerText = "Serlok tak parani!!!";
+  }, 3000);
+}
+</script>
+
+</body>
+</html>
